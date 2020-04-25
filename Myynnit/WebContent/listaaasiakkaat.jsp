@@ -13,14 +13,14 @@
 </style>
 </head>
 <body>
-<table id="listaus">
+<table id="listaus" border>
 	<thead>	
-		<tr>
-			<th class="oikealle">Hakusana:</th>
-			<th colspan="2"><input type="text" id="hakusana"></th>
+		<tr style="background-color:blue; color:white; height:50px;">
+			<th class="oikealle" colspan="2">Hakusana:</th>
+			<th colspan="2"><input type="text" id="hakusana" ></th>
 			<th><input type="button" value="hae" id="hakunappi"></th>
 		</tr>			
-		<tr>
+		<tr style="background-color:blue; color:white; height:50px;">
 			<th>Asiakas_id</th>
 			<th>Etunimi</th>
 			<th>Sukunimi</th>
