@@ -1,0 +1,47 @@
+package model;
+
+public class Myynti {
+	private int asiakas_id;
+	private String etunimi, sukunimi, puhelin, sposti;
+	public Myynti() {
+		super();		
+	}
+	public Myynti(int asiakas_id, String etunimi, String sukunimi, String puhelin, String sposti) {
+		super();
+		this.asiakas_id = asiakas_id;
+		this.etunimi = etunimi;
+		this.sukunimi = sukunimi;
+		this.puhelin = puhelin;
+		this.sposti = sposti;
+	}
+	public String getRekno() {
+		return rekno;
+	}
+	public void setRekno(String rekno) {
+		this.rekno = rekno;
+	}
+	public String getMerkki() {
+		return merkki;
+	}
+	public void setMerkki(String merkki) {
+		this.merkki = merkki;
+	}
+	public String getMalli() {
+		return malli;
+	}
+	public void setMalli(String malli) {
+		this.malli = malli;
+	}
+	public int getVuosi() {
+		return vuosi;
+	}
+	public void setVuosi(int vuosi) {
+		this.vuosi = vuosi;
+	}
+	@Override
+	public String toString() {
+		return "Auto [rekno=" + rekno + ", merkki=" + merkki + ", malli=" + malli + ", vuosi=" + vuosi + "]";
+	}
+	
+	
+}

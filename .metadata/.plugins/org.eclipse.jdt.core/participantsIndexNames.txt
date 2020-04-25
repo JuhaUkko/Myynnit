@@ -1,0 +1,7 @@
+INDEX VERSION 1.131
+C:\Users\Juha Ukkonen\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1842465918.index
+\Myynnit\src
+C:\Users\Juha Ukkonen\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3550493857.index
+\Etatehtava3\src
+C:\Users\Juha Ukkonen\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\559097465.index
+\OmaEka\src

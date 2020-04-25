@@ -1,0 +1,13 @@
+
+huhtik. 18, 2020 01:23:10.87 NEW SESSION
+huhtik. 18, 2020 01:23:10.93 IPDL protocol error: Handler returned error code!
+huhtik. 18, 2020 01:23:10.93 
+huhtik. 18, 2020 01:23:10.93 ###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+huhtik. 18, 2020 01:23:10.93 
+huhtik. 18, 2020 01:23:10.93 IPDL protocol error: Handler returned error code!
+huhtik. 18, 2020 01:23:10.94 
+huhtik. 18, 2020 01:23:10.94 ###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+huhtik. 18, 2020 01:23:10.94 
+huhtik. 18, 2020 01:23:11.79 
+huhtik. 18, 2020 01:23:11.79 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+huhtik. 18, 2020 01:23:11.79 

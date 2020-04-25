@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Myynnit">
+        <property name="context-root" value="Myynnit"/>
+        <property name="java-output-path" value="/Myynnit/build/classes"/>
+    </wb-module>
+</project-modules>

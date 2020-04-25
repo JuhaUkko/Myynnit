@@ -1,0 +1,47 @@
+package model;
+
+public class Myynti {
+	private int asiakas_id;
+	private String etunimi, sukunimi, puhelin, sposti;
+	public Myynti() {
+		super();		
+	}
+	public Myynti(int asiakas_id, String etunimi, String sukunimi, String puhelin, String sposti) {
+		super();
+		this.asiakas_id = asiakas_id;
+		this.etunimi = etunimi;
+		this.sukunimi = sukunimi;
+		this.puhelin = puhelin;
+		this.sposti = sposti;
+	}
+	public int getAsiakas_id() {
+		return asiakas_id;
+	}
+	public void setAsiakas_id(int asiakas_id) {
+		this.asiakas_id = asiakas_id;
+	}
+	public String getEtunimi() {
+		return etunimi;
+	}
+	public void setSukunimi(String sukunimi) {
+		this.sukunimi = sukunimi;
+	}
+	public String getMalli() {
+		return malli;
+	}
+	public void setMalli(String malli) {
+		this.malli = malli;
+	}
+	public int getVuosi() {
+		return vuosi;
+	}
+	public void setVuosi(int vuosi) {
+		this.vuosi = vuosi;
+	}
+	@Override
+	public String toString() {
+		return "Myynti [asiakas_id=" + asiakas_id + ", etunimi=" + etunimi + ", sukunimi=" + sukunimi + ", puhelin=" + puhelin + ", sposti=" + sposti + "]";
+	}
+	
+	
+}
