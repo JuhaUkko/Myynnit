@@ -72,7 +72,7 @@ public class Dao {
 				if(rs!=null){ //jos kysely onnistui
 					//con.close();					
 					while(rs.next()){
-						Myynti myynti = new Myynti();
+						Myynti myynti = new Myynti();						
 						myynti.setAsiakas_id(rs.getInt(1));
 						myynti.setEtunimi(rs.getString(2));
 						myynti.setSukunimi(rs.getString(3));	
@@ -88,4 +88,39 @@ public class Dao {
 		}		
 		return asiakkaat;
 	}
+	
+	public boolean lisaaMyynti(Myynti myynti){
+		boolean paluuArvo=true;
+		sql="INSERT INTO asiakkaat VALUES(?,?,?,?,?)";						  
+		try {
+			con = yhdista();
+			stmtPrep=con.prepareStatement(sql); 
+			stmtPrep.setInt(1, myynti.getAsiakas_id());
+			stmtPrep.setString(2, myynti.getEtunimi());
+			stmtPrep.setString(3, myynti.getSukunimi());
+			stmtPrep.setString(4, myynti.getPuhelin());
+			stmtPrep.setString(5, myynti.getSposti());
+			stmtPrep.executeUpdate();
+	        con.close();
+		} catch (Exception e) {				
+			e.printStackTrace();
+			paluuArvo=false;
+		}				
+		return paluuArvo;
+	}
+	public boolean poistaMyynti(String asiakas_id){ //Oikeassa el‰m‰ss‰ tiedot ensisijaisesti merkit‰‰n poistetuksi.
+		boolean paluuArvo=true;
+		sql="DELETE FROM asiakkaat WHERE asiakas_id=?";						  
+		try {
+			con = yhdista();
+			stmtPrep=con.prepareStatement(sql); 
+			stmtPrep.setString(1, asiakas_id);			
+			stmtPrep.executeUpdate();
+	        con.close();
+		} catch (Exception e) {				
+			e.printStackTrace();
+			paluuArvo=false;
+		}				
+		return paluuArvo;
+	}	
 }
